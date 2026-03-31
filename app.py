@@ -68,8 +68,8 @@ embeddings = HuggingFaceEmbeddings(
 )
 db = FAISS.load_local("ipc_vector_db", embeddings, allow_dangerous_deserialization=True)
 db_retriever = db.as_retriever(search_type="similarity", search_kwargs={"k": 4})
-
-TOGETHER_AI_API = os.environ["2a7c5dcdbb1049a39117ac0865c4d04008d49db31aa85a3258603817af16dbd0"]
+TOGETHER_KEY = "tgp_v1__7W8v-kHYgeUhO0EiT31naxXkrpWXT8ykVwbZfOqp4Y"
+TOGETHER_AI_API = os.environ[TOGETHER_KEY]
 llm = Together(
     model="mistralai/Mistral-7B-Instruct-v0.2",
     temperature=0.5,
