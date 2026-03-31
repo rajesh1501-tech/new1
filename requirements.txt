@@ -1,0 +1,15 @@
+langchain
+pypdf
+transformers
+sentence-transformers
+accelerate
+faiss-cpu
+streamlit
+langchain-fireworks
+einops
+langchain_together
+streamlit
+langchain-huggingface
+langchain-text-splitters
+langchain-core
+langchain-community
